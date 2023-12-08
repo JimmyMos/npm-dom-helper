@@ -2,6 +2,10 @@
 
 > Give vanilla Javascript equivalent for Jquery popular functions
 
+```js
+import { hasClass, addClass, removeClass, getParentsList, findParent } from "@jimmymos/dom-helper"
+```
+
 ## Does an element have a CSS class applied to it ?
 ```js
 // jQuery $('#el').hasClass('className')
