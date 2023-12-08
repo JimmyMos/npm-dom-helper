@@ -1,3 +1,10 @@
+/**
+ * Check if an element have a CSS class applied to it.
+ *
+ * @param {HTMLElement} el        - HTML element.
+ * @param {string     } className - CSS class name.
+ * @returns {void}
+ */
 export function hasClass(el, className)
 {
     if (el.classList)
@@ -5,6 +12,13 @@ export function hasClass(el, className)
     return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
 }
 
+/**
+ * Add a CSS class to an element.
+ *
+ * @param {HTMLElement} el        - HTML element.
+ * @param {string     } className - CSS class name.
+ * @returns {void}
+ */
 export function addClass(el, className)
 {
     if (el.classList)
@@ -13,6 +27,13 @@ export function addClass(el, className)
         el.className += " " + className;
 }
 
+/**
+ * Remove a CSS class from an element.
+ *
+ * @param {HTMLElement} el        - HTML element.
+ * @param {string     } className - CSS class name.
+ * @returns {void}
+ */
 export function removeClass(el, className)
 {
     if (el.classList)
@@ -24,6 +45,12 @@ export function removeClass(el, className)
     }
 }
 
+/**
+ * Get the list of parents elements.
+ *
+ * @param {HTMLElement} el - HTML element.
+ * @returns {HTMLElement[]} Array of parents elements.
+ */
 export function getParentsList(el) {
     var parentSelector = document.querySelector('html');
     var parents        = [];
@@ -36,6 +63,14 @@ export function getParentsList(el) {
     parents.push(parentSelector);
     return parents;
 }
+
+/**
+ * Get the first parent matching a selector.
+ *
+ * @param {HTMLElement} el       - HTML element.
+ * @param {string     } selector - CSS selector.
+ * @returns {HTMLElement} First parent element matching the selector.
+ */
 export function findParent(el, selector){
     var result      = false;
     var parents     = getParentsList(el);
