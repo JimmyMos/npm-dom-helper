@@ -26,12 +26,6 @@ removeClass(document.querySelector('#el'), 'className')
 getParentsList(document.querySelector('#el'))
 ```
 
-## Get the list of parents elements
-```js
-// jQuery $('#el').parents()
-getParentsList(document.querySelector('#el'))
-```
-
 ## Get the first parent matching a selector
 ```js
 // jQuery $('#el').parents('.className')
