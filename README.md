@@ -32,25 +32,25 @@ import {
 hasClass(document.querySelector('#el'), 'className');
 ```
 
-## Add a CSS class to an element
+### Add a CSS class to an element
 ```js
 // jQuery equivalent: $('#el').addClass('className')
 addClass(document.querySelector('#el'), 'className');
 ```
 
-## Remove a CSS class from an element
+### Remove a CSS class from an element
 ```js
 // jQuery equivalent: $('#el').removeClass('className')
 removeClass(document.querySelector('#el'), 'className');
 ```
 
-## Get all parent elements
+### Get all parent elements
 ```js
 // jQuery equivalent: $('#el').parents()
 getParentsList(document.querySelector('#el'));
 ```
 
-## Find the first matching parent
+### Find the first matching parent
 ```js
 // jQuery equivalent: $('#el').parents('.className')
 findParent(document.querySelector('#el'), '.className');
