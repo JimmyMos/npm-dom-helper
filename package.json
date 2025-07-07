@@ -1,6 +1,6 @@
 {
   "name": "@jimmymos/dom-helper",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "General DOM helper",
   "main": "index.js",
   "type": "module",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hashiramaa/npm-dom_helper.git"
+    "url": "git+https://github.com/JimmyMos/npm-dom-helper.git"
   },
   "keywords": [
     "DOM",
@@ -23,7 +23,7 @@
   "author": "jimmymos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Hashiramaa/npm-dom_helper/issues"
+    "url": "https://github.com/JimmyMos/npm-dom-helper/issues"
   },
-  "homepage": "https://github.com/Hashiramaa/npm-dom_helper#readme"
+  "homepage": "https://github.com/JimmyMos/npm-dom-helper#readme"
 }

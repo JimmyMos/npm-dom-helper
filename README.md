@@ -1,37 +1,57 @@
 # @jimmymos/dom-helper
 
-> Give vanilla Javascript equivalent for Jquery popular functions
+> A lightweight utility library that replicates popular jQuery DOM functions using vanilla JavaScript.
 
-```js
-import { hasClass, addClass, removeClass, getParentsList, findParent } from "@jimmymos/dom-helper"
+This module provides simple, reusable helper functions for common DOM tasks—no need to include jQuery in your project!
+
+## 📦 Installation
+
+```bash
+npm install @jimmymos/dom-helper
 ```
 
-## Does an element have a CSS class applied to it ?
+## 🚀 Usage
+
+Import the functions you need:
+
 ```js
-// jQuery $('#el').hasClass('className')
-hasClass(document.querySelector('#el'), 'className')
+import { 
+    hasClass, 
+    addClass, 
+    removeClass, 
+    getParentsList, 
+    findParent 
+} from "@jimmymos/dom-helper"
+```
+
+## 🔧 API Reference
+
+### Check if an element has a class
+```js
+// jQuery equivalent: $('#el').hasClass('className')
+hasClass(document.querySelector('#el'), 'className');
 ```
 
 ## Add a CSS class to an element
 ```js
-// jQuery $('#el').addClass('className')
-addClass(document.querySelector('#el'), 'className')
+// jQuery equivalent: $('#el').addClass('className')
+addClass(document.querySelector('#el'), 'className');
 ```
 
 ## Remove a CSS class from an element
 ```js
-// jQuery $('#el').removeClass('className')
-removeClass(document.querySelector('#el'), 'className')
+// jQuery equivalent: $('#el').removeClass('className')
+removeClass(document.querySelector('#el'), 'className');
 ```
 
-## Get the list of parents elements
+## Get all parent elements
 ```js
-// jQuery $('#el').parents()
-getParentsList(document.querySelector('#el'))
+// jQuery equivalent: $('#el').parents()
+getParentsList(document.querySelector('#el'));
 ```
 
-## Get the first parent matching a selector
+## Find the first matching parent
 ```js
-// jQuery $('#el').parents('.className')
-findParent(document.querySelector('#el'), '.className')
+// jQuery equivalent: $('#el').parents('.className')
+findParent(document.querySelector('#el'), '.className');
 ```

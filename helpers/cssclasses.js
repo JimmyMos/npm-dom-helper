@@ -2,7 +2,7 @@
  * Check if an element have a CSS class applied to it.
  *
  * @param {HTMLElement} el        - HTML element.
- * @param {string     } className - CSS class name.
+ * @param {string}      className - CSS class name.
  * @returns {void}
  */
 export function hasClass(el, className)
@@ -16,7 +16,7 @@ export function hasClass(el, className)
  * Add a CSS class to an element.
  *
  * @param {HTMLElement} el        - HTML element.
- * @param {string     } className - CSS class name.
+ * @param {string}      className - CSS class name.
  * @returns {void}
  */
 export function addClass(el, className)
@@ -31,7 +31,7 @@ export function addClass(el, className)
  * Remove a CSS class from an element.
  *
  * @param {HTMLElement} el        - HTML element.
- * @param {string     } className - CSS class name.
+ * @param {string}      className - CSS class name.
  * @returns {void}
  */
 export function removeClass(el, className)

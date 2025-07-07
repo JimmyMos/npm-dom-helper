@@ -21,11 +21,11 @@ export function getParentsList(el) {
  * Get the first parent matching a selector.
  *
  * @param {HTMLElement} el       - HTML element.
- * @param {string     } selector - CSS selector.
- * @returns {HTMLElement} First parent element matching the selector.
+ * @param {string}      selector - CSS selector.
+ * @returns {HTMLElement | undefined} First parent element matching the selector.
  */
 export function findParent(el, selector){
-    var result      = false;
+    var result      = undefined;
     var parents     = getParentsList(el);
     var elemsToTest = document.querySelectorAll(selector);
     //
